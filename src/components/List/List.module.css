@@ -1,0 +1,50 @@
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 736px;
+    margin-top: -27px;
+}
+
+.formContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formContainer input {
+    width: 87%;
+    height: 54px;
+    background: var(--gray-500);
+    border-radius: 8px;
+    border: 0;
+    padding: 1rem;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--gray-300);
+    line-height: 22px;
+}
+
+.formContainer button {
+    width: 12%;
+    height: 54px;
+    border-radius: 8px;
+    background: var(--blue-700);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContainer button span {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: var(--gray-100);
+    font-size: 0.875rem;
+    margin-right: 0.5rem;
+}

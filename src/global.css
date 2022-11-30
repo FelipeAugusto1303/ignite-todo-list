@@ -26,5 +26,6 @@
 }
 
 body {
-    background: var(--gray-600)
+    background: var(--gray-600);
+    
 }
