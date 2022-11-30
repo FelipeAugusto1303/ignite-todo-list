@@ -2,12 +2,14 @@ import React, {useState} from 'react';
 
 import styles from "./List.module.css";
 import { PlusCircle } from 'phosphor-react';
+import TaskList from '../TaskList';
 
 function List() {
 
     const [tasksCreated, setTasksCreated] = useState(0);
     const [tasksDone, setTasksDone] = useState(0);
     const [taskList, setTaskList] = useState([]);
+
   return (
     <div className={styles.listContainer}>
         <form onSubmit={() => console.log("opa")} className={styles.formContainer}>
@@ -27,6 +29,7 @@ function List() {
                 <span>{tasksCreated > 0 ? `${tasksDone} de ${tasksCreated}`: tasksCreated}</span>
             </div>
         </div>
+        <TaskList list={taskList}/>
     </div>
   );
 }
