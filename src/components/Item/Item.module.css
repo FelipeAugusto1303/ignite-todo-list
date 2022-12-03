@@ -1,0 +1,59 @@
+.itemContainer {
+    background-color: var(--gray-500);
+    height: 72px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.unchecked {
+    border: 2px solid var(--blue-200);
+    border-radius: 100px;
+    width: 1rem;
+    height: 1rem;
+}
+
+.checked {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100px;
+    background-color: var(--purple-200);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemContainer span {
+    width: 90%;
+    font-size: 0.875rem;
+    line-height: 20px;
+    font-family: 'Inter', sans-serif;
+    
+
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.taskDone {
+    text-decoration: line-through;
+    color: var(--gray-300);
+}
+
+.taskUndone {
+    color: var(--gray-100);
+}

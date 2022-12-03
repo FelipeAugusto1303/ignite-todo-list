@@ -2,19 +2,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     
     width: 100%;
     height: 244px;
 }
 
-.tasksContainer > img {
+.clipboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.clipboard > img {
     width: 56px;
     height: 56px;
     margin-bottom: 1rem;
 }
 
-.tasksContainer > span {
+.clipboard > span {
     font-size: 1rem;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
@@ -22,6 +30,11 @@
     color: var(--gray-300);
 }
 
-.tasksContainer > span + span {
+.clipboard > span + span {
     font-weight: 400;
 }
+
+.task {
+    width: 100%;
+}
+
